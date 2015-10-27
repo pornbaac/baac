@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
+        <script src="js/maptest.js" type="text/javascript"></script>
+    </head>
+    <body>        
+        <section data-role="page" class="bg-main">
+            <header data-role="header">
+                <h1 class="page-header">เกี่ยวกับสาขา</h1>
+                <a href="#" data-role="button" data-iconpos="notext" data-icon="back" data-rel="back"></a>
+                <a href="#home" data-role="button" data-iconpos="notext" data-icon="home"></a>
+                <!--<div data-role="controlgroup" data-type="horizontal">
+                    <a href="" data-role="button" data-inline="true">A</a>
+                    <a href="" data-role="button" data-inline="true">B</a>
+                    <a href="" data-role="button" data-inline="true">C</a>
+                </div>-->
+
+            </header>
+            <div data-role="content">
+                <div data-role="navbar" data-grid="a" data-iconpos="left">
+                    <ul>
+                        <li><a href="#map-page" data-icon="location" data-role="button">ที่ตั้งสาขา</a></li>
+                        <li><a data-icon="location">ที่ตั้ง ATM</a></li>
+                        <li><a data-icon="location">ที่ตั้ง PAM</a></li>
+                        <li><a data-icon="location">ที่ตั้ง CDM</a></li>
+
+                    </ul>  
+                </div>
+
+            </div>
+            <footer data-role="footer">
+
+            </footer>       
+        </section>
+
+        <div data-url="map-page" data-role="page" id="map-page">
+            <div data-role="header" data-theme="a">
+                <h1>Maps</h1>
+            </div>
+            <div role="main" class="ui-content" id="map-canvas">
+                <!-- map loads here... -->
+            </div>
+        </div>
+
+    </body>
+</html>

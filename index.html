@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <!--<script type="text/javascript">
+            $(document).on("mobileinit", function () {
+                $.mobile.defaultPageTransition = "slide";
+            });
+        </script>-->
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>        
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+
+        <div data-role="page" id="home" class="bg-main">
+            <div data-role="header" data-position="fixed" data-fullscreen="true">
+                <h1 class="page-header">Home</h1>
+            </div> 
+            <div data-role="content" >
+
+                <p style="text-align: center;"><img src="images/my_logo.png" height="200" width="200"></p>                
+
+                <div data-role="controlgroup">
+                    <a href="#product" data-role="button" data-transition="pop">                        
+                        <div class="center-wrapper">
+                            <img src="images/prod.png" height="80" width="80">
+                            <span>ผลิตภัณฑ์และบริการ</span></div></a>
+                    <a href="baac_btn.html" rel="external" data-role="button" data-transition="pop">
+                        <div class="center-wrapper">
+                        <img src="images/brn.png" height="80" width="80">
+                        <span>เกี่ยวกับสาขา</span></div></a>
+                    <a href="baac_chk.html" rel="external" data-role="button" data-transition="pop">
+                        <div class="center-wrapper">
+                        <img src="images/lot.png" height="80" width="80">
+                        <span>ตรวจสลากออมทรัพย์</span></div></a>
+                    <a href="#login" data-role="button" data-transition="pop" data-icon="shop"><h1 class="page-content">Login</h1></a>
+                    <a href="map_test1.html" rel="external" data-role="button" data-transition="pop" data-icon="shop"><h1 class="page-content">map</h1></a>
+                    <a href="#list" rel="external" data-role="button" data-transition="pop" data-icon="shop" data-mini="true"><h1 class="page-content">LIST</h1></a>
+                </div>  
+
+
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1 class="page-content">&copy;2558</h1>
+                <a href="#Aboutus" data-role="button" data-icon="tag" data-mini= "true" data-rel="dialog" class="ui-btn-right">About us</a> 
+            </div>
+        </div>
+        <div data-role="page" id="login" class="bg-main">
+            <div data-role="header" data-position="fixed" data-fullscreen="true">
+                <h1 class="page-header">Login</h1>
+                <a href="#" data-role="button" data-iconpos="notext" data-icon="back" data-rel="back"></a>
+                <a href="#home" data-role="button" data-iconpos="notext" data-icon="home"></a> 
+            </div> 
+            <div data-role="content" >                
+                <p style="text-align: center;"><img src="images/my_logo.png" height="200" width="200"></p>
+                <form>
+                    <div class="ui-field-contain">
+                        <label for="txt-name">name</label>
+                        <input type="text" id="txt-name" placeholder="กรุณากรอกชื่อ" data-clear-btn="true" data-mini="true">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="txt-ps">Password</label>
+                        <input type="password" id="txt-ps" placeholder="กรอกpassword" data-clear-btn="true" data-mini="true">
+                    </div>
+                    <div class="ui-field-contain">               
+                        <input type="submit" value="ตกลง" data-inline="true" data-mini="true">
+                        <input type="reset" value="ยกเลิก" data-inline="true" data-mini="true">
+                    </div>        
+                </form>
+            </div>  
+        </div>
+        <div data-role="dialog" id="Aboutus">
+            <div data-role="header">
+                <h1 class="page-header">About us</h1>
+            </div>
+            <div data-role="content">
+                <h1 class="page-content"><a data-rel="popup" href="#pop1">Gis Team</a></h1>
+                <a data-role="button" data-rel="back">Back</a>
+                <div data-role="popup" id="pop1">
+                    <div data-role="header">
+                        <h1 class="page-content">Gis Team</h1> 
+                        <a data-icon="delete" data-iconpos = "notext"  data-rel="back" class="ui-btn-right"></a>
+                    </div>
+                    <div data-role="content">
+                        <p>กลุ่มงานระบบสารสนเทศเชิงภูมิศาสตร์</p>
+                        <p>ฝ่ายปฏิบัติการเทคโนโลยีสารสนเทศ</p>
+                        <p>Wan 8870-2,8875</p>                        
+                    </div>                  
+                </div>
+            </div>            
+        </div>
+        <div data-role="page" id="product" class="bg-main">            
+            <div data-role = "header">
+                <h1>ผลิตภัณฑ์และบริการ</h1>
+                <a href="#" data-role="button" data-iconpos="notext" data-icon="back" data-rel="back"></a>
+                <a href="#home" data-role="button" data-iconpos="notext" data-icon="home"></a>                
+            </div>
+
+            <div data-role = "content">                  
+                <!--<div data-role="controlgroup" data-mini="true">                  
+                  <a href="#" data-role="button" data-transition="pop"><h1 class="page-content">สินเชื่อ</h1></a>
+                  <a href="#" data-role="button" data-transition="pop"><h1 class="page-content">เงินฝาก</h1></a>
+                  <a href="#" data-role="button" data-transition="pop"><h1 class="page-content">บริการ</h1></a>
+                  <a href="#" data-role="button" data-transition="pop"><h1 class="page-content">เงินฝากคุ้มครองชีวิต</h1></a>                
+               </div>-->   
+                <div data-role="collapsible-set" data-inset="false">  
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h1 class="page-header">สินเชื่อ</h1>
+                        <p>สินเชื่อ A-cash</p>                    
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-l">                               
+                        <h1 class="page-header">เงินฝาก</h1>
+                        <p>สลากออมทรัพย์</p>
+                        <div data-role="collapsible">
+                            <h1 class="page-header">สลากออมทรัพย์</h1>
+                            <p>หลักเกณฑ์การรับฝากเงิน</p>                    
+                        </div>
+                    </div>  
+                    <div data-role="collapsible">                               
+                        <h1 class="page-header">บริการ</h1>
+                        <div class="ui-grid-a"> <!--1 row 2 column-->
+                            <div class="ui-block-a">
+                                <a data-role="button" data-mini="true"><br>การค้าต่างประเทศ</a>
+                            </div>                        
+                            <div class="ui-block-b">
+                                <a data-role="button" data-mini="true"><br>โอนเงินด่วนระหว่างประเทศ</a>
+                            </div>                       
+                            <div class="ui-block-a">
+                                <a data-role="button" data-mini="true"><br>โอนเงินไทย-ลาว</a>
+                            </div>                        
+                            <div class="ui-block-b">
+                                <a href="outward.html" data-role="button" data-mini="true"><img src="images/outward1.png" alt=""/><br>โอนเงินต่างประเทศขาออก</a>
+                            </div>                        
+                        </div>                    
+                    </div>  
+                    <div data-role="collapsible">                               
+                        <h1 class="page-header">เงินฝากคุ้มครองชีวิต</h1>
+                        <p>Detail #1</p>                    
+                    </div>                                              
+                </div>            
+            </div>
+
+            <div data-role="page" id="news">
+                <div data-role = "header">
+                    <h1>เกี่ยวกับสาขา</h1>
+                    <a href="#" data-role="button" data-iconpos="notext" data-icon="back" data-rel="back"></a>
+                    <a href="#home" data-role="button" data-iconpos="notext" data-icon="home"></a>
+                </div>
+                <div data-role = "content">
+
+                </div>            
+            </div>
+            <div data-role="page" id="chk">
+                <div data-role = "header">
+                    <h1 class="page-headersub">ตรวจสลากออมทรัพย์</h1>
+                    <a href="#" data-role="button" data-iconpos="notext" data-icon="back" data-rel="back"></a>
+                    <a href="#home" data-role="button" data-iconpos="notext" data-icon="home"></a>
+                </div>
+                <div data-role = "content">
+
+                </div>            
+            </div>
+        </div>  
+        <div data-role="page" id="list">
+            <div data-role="header">
+                <h1 class="page-header">LIST</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" id="lv1">
+                    <li><a>hello</a></li>
+                </ul>
+                <form class="ui-filterable">
+                    <input id="autoc-input" type="search">                    
+                </form>
+                <ul data-role="listview" data-filter="true"
+                    data-filter-reveal="true" data-input="#autoc-input" data-inset="true">
+                    <li><a>กทม.</a></li>  
+                    <li><a>นนทบุรี</a></li>
+                    <li><a>กระบี่</a></li>
+                    <li><a>เลย</a></li>
+                    <li><a>นครนายก</a></li>
+                </ul>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible">
+                        <h2>List</h2>
+                        <ul data-role="listview" data-inset="true" 
+                            data-autodividers="true" >
+                            <li data-icon="forward"><a href="">A</a></li>
+                            <li data-role="list-divider">---------</li>
+                            <li><a>B</a></li>
+                            <li data-icon="false"><a>C</a></li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible">
+                        <h2>List2</h2>
+                        <ol data-role="listview" data-split-icon="plus" 
+                            data-filter="true" data-filter-placeholder="Baac word">
+                            <li data-filtertext="ก">                                
+                                <a href=""><img src="images/prod.png">
+                                    <h2>A</h2>
+                                    <p>123456</p>
+                                </a>
+                                <a href=""></a> 
+
+                            </li> 
+                            <li data-filtertext="ข">
+                                <a>B
+                                    <p class="ui-li-aside ui-li-count">12</p>
+                                </a></li>
+                            <li>C</li>
+                        </ol>
+                    </div>  
+                </div>
+            </div>
+          <!-- <script type="text/javascript">
+           BService_url=""
+             $(document).on("pageinit", "#home", function () {
+                alert("Home init");
+            });
+            $(document).on("pagebeforeshow", "#home", function () {
+                alert("Home pagebeforeshow");
+            });
+            $(document).on("pageshow", "#home", function () {
+                alert("Home show");
+            });
+            $(document).on("pageinit", "#aboutus", function () {
+                alert("AB show");
+            });
+            </script> -->
+        <script type="text/javascript">
+           var BService_url="http://172.18.27.3/baac_services/lot_list.php"  
+           $("#list").on("pageinit",function(){
+           $("#lv1 li").remove();    
+           });
+           $("#list").on("pagebeforeshow",function(){
+               $.getJSON(BService_url,function(data){
+               $("#lv1 li").remove();
+               lots=data.items;
+               $.each(lots,function(index,lot){
+                   $("#lv1").append("<li><a>"+lot.lot_name+"</a></li>");
+               });
+               $("#lv1").listview("refresh");
+               });
+           });
+        </script>
+    </body>
+</html>
